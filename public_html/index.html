@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Example Z Layout</title>
+		<meta name="author" content="Jay Patel" />
+		<meta name="description" content="A template for a Z/F layout." />
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+
+		<!-- Open Graph Meta -->
+		<meta property="og:site_name" content="Example Z Layout" />
+		<meta property="og:locale" content="en_us" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Example Z Layout" />
+		<meta property="og:description" content="A template for a Z layout." />
+		<!-- /Open Graph Meta Data -->
+
+		<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	</head>
+
+	<div class="wrapper">
+		<div class="box header">
+			<img src="img/logo.png" alt="logo pic" class="topleft"/>			
+		</div> 
+		<div class="box links">
+			<a href="index.html" class="hypColor">Home</a>
+			<a href="secondpg.html" class="hypColor">F-Layout</a>
+		</div>
+		<div class="box content">
+		  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/A_picture_is_worth_a_thousand_words.jpg" alt="hero picture example" class="image"/>
+		</div>
+		<div class="box footer">Footer</div>
+	</div>
+
+  <style>
+		.hypColor{
+			color: rgb(1, 253, 55) !important;
+		}
+		.image{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+		}
+		body {
+			margin: 40px;
+		}
+
+		.sidebar {
+			grid-area: sidebar;
+		}
+
+		.content {
+			grid-area: content;
+			position: relative;
+		}
+
+		.header {
+			grid-area: header;
+		}
+
+		.footer {
+			grid-area: footer;
+		}
+		.links {
+			grid-area: links;
+		}
+
+		.wrapper {
+			display: grid;
+			grid-gap: 10px;
+			margin: 0 auto;
+			grid-template-columns: 1fr 3fr;
+			padding-left: 10%;
+			padding-right: 10%;
+			grid-template-areas:
+			"header  header  links"
+			"content content content"
+			"footer  footer  footer";
+			background-color: #fff;
+			color: #444;
+		}
+
+		.box {
+			background-color: #444;
+			color: #fff;
+			border-radius: 5px;
+			padding: 50px;
+			font-size: 150%;
+		}
+
+		.header,
+		.footer {
+			background-color: #999;
+		}
+
+		.topleft {
+			position: relative;
+			object-fit: cover;
+			width: 500px;
+			height: 50px;
+		}
+  </style>
+</html>
