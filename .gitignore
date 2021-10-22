@@ -1,9 +1,3 @@
-# temp stuff
-
-./public_html/temp.html
-
-./public_html/css/temp.css
-
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
