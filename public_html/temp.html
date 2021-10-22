@@ -1,76 +1,29 @@
-<div class="wrapper">
-    <header class="header">My header</header>
-    <aside class="sidebar">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis diam sed ultricies commodo. Nulla sed sem eu tortor tincidunt mollis a et diam. Aliquam ultrices nibh magna, ut rhoncus leo vulputate ut. Aenean non maximus nibh. Proin ac lorem quis sem volutpat maximus ut ac magna. Vivamus lacinia dolor ac urna ultricies sodales. Nam dapibus mi augue, non viverra felis imperdiet sit amet. Donec id ipsum elementum, euismod arcu quis, feugiat leo. Proin id porta mi. Nulla sit amet fringilla sapien, at pretium velit. Cras faucibus leo dictum odio hendrerit ullamcorper.
-      </p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Example F Layout</title>
+        <meta name="author" content="Jay Patel" />
+        <meta name="description" content="A template for a f layout." />
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
 
-    </aside>
-    <article class="content">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/A_picture_is_worth_a_thousand_words.jpg" alt="hero picture example" class="image"/>
-    </article>
-    <footer class="footer">My footer</footer>
-  </div>
+        <!-- Open Graph Meta -->
+        <meta property="og:site_name" content="Example F Layout" />
+        <meta property="og:locale" content="en_us" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Example F Layout" />
+        <meta property="og:description" content="A template for a F layout." />
+        <!-- /Open Graph Meta Data -->
 
-  <style>
-      *, *:before, *:after {
-  box-sizing: border-box;
-}
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-body {
-  margin: 40px;
-  font-family: 'Open Sans', 'sans-serif';
-  background-color: #fff;
-  color: #444;
-}
 
-.wrapper {
-  max-width: 940px;
-  margin: 0 20px;
-  display: grid;
-  grid-gap: 10px;
-}
-
-@media screen and (min-width: 500px) {
-
-  /* no grid support? */
-  .sidebar {
-    float: left;
-    width: 19.1489%;
-  }
-
-  .content {
-    float: right;
-    width: 79.7872%;
-  }
-
-  .wrapper {
-    margin: 0 auto;
-    grid-template-columns: 1fr 3fr;
-  }
-  
-  .header, .footer {
-    grid-column: 1 / -1;
-    /* needed for the floated layout */
-    clear: both;
-  }
-
-}
-
-.wrapper > * {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-  /* needed for the floated layout*/
-  margin-bottom: 10px;
-}
-
-/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
-@supports (display: grid) {
-  .wrapper > * {
-    width: auto;
-    margin: 0;
-  }
-}
-  </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            Hi
+        </nav>
+    </body>
+</html>

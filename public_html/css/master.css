@@ -33,6 +33,10 @@ body {
 	color: #444;
 }
 
+a {
+	color: inherit !important;
+}
+
 @media screen and (min-width: 500px) {
 
 	/* no grid support? */
@@ -55,10 +59,17 @@ body {
 		grid-column: 1 / -1;
 		/* needed for the floated layout */
 		clear: both;
+		;
 	}
 	.links{
 		float: right;
-		width: 10%;
+		width: 20%;
+		color: rgb(1, 253, 55) !important;
+	}
+
+	.left{
+		float: left;
+		width: 20%;
 	}
 
 }
