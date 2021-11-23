@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Installing Pylint and OOP Term Definitions</title>
+        <title>Seperation of Concerns</title>
         <meta name="author" content="Jay Patel" />
         <meta name="description" content="How to install pylint and define OOP terms" />
         <script src="../js/jquery-3.3.1.slim.min.js"></script>
@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex">
                 <div class="">
-                    <a class="navbar-brand" href="">Installing Pylint and OOP Term Definitions</a>
+                    <a class="navbar-brand" href="">Seperation of Concerns</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -30,13 +30,13 @@
                                 <a class="nav-link btn btn-sm btn-outline-secondary" href="pylint-terms.html">Pylint</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-sm btn-outline-secondary" href="oops-oops.html">OOP</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link btn btn-sm btn-outline-secondary" href="testing.html">Testing</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="oops-oops.html">OOP</a>
+                            </li>
                             <li class="nav-item active">
-                                <a class="nav-link btn btn-outline-success" href="placeholder.html">????<span class="sr-only">(current)</span></a>
+                                <a class="nav-link btn btn-outline-success" href="placeholder.html">Seperation<span class="sr-only">(current)</span></a>
                             </li>
                         </ul>
                     </div>
@@ -46,9 +46,9 @@
                 <div class="row justify-content-center">
                     <div class="col-4">
                         <div class="card bg-dark" style="margin-top: 100px;">
-                            <img class="card-img" style="width:100%;" src="../img/search-1.jpg" alt="picture of yahoo home screen">
+                            <img class="card-img" style="width:100%;" src="../img/sep1.png" alt="picture of four python files">
                             <div class="card-body">
-                                <h5 class="card-title text-white">Old Yahoo Homescreen</h5>
+                                <h5 class="card-title text-white">Multiplication, Addition, Subtraction, and Division Scripts</h5>
                             </div>
                         </div>
                     </div>
@@ -57,12 +57,17 @@
                             <div class="card-body">
                                 <p class="d-inline">
                                     <ul class= "text-white">
-                                        <li>OOP Stuff
+                                        <li>Seperation of Concerns
                                             <ul>
-                                                <li>Abstraction - Calculation class</li>
-                                                <li>Polymorphism - get_result in each calc operation</li>
-                                                <li>Encapsulation - .create and .add_calc hidden in add_number etc</code></li>
-                                                <li>Inheritence - .create in Addition etc class from Calcuation class</li>
+                                                <li>Seperation of Concerns is the idea of avoiding combining different concerns or pieces of code</li>
+                                                <li>When code is seperated, there is a less probability of breaking unmodified code</li>
+                                                <li>Another way of thinking about this, is that all of the functions are simple, one-liners</li>
+                                                <li>This techinique makes it easier to maintain and add features</li>
+
+                                                <li>In the calculation program, you can see that the four types of operations are located in different python scripts</li>
+                                                <li>Even the base calculation, the abstract class, is seperated</li>
+                                                <li>Calculator is the API for calculation, every function dealing with the <q>history</q> array is located there</li>
+                                                <li>There is no duplicated code, meaning there are no repeating loops</li>
                                             </ul>
                                         </li>
                                         
@@ -70,28 +75,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-4 align-self-center">
-                        <div class="card bg-dark">
-                            <img class="card-img" style="width:100%;" src="../img/search-2.png" alt="picture of google logo">
-                            <div class="card-body">
-                                <h5 class="card-title text-white">Google Logo</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card bg-dark" style="margin-top: 100px; margin-bottom: 75px;">
-                            <div class="card-body">
-                                <p class="d-inline">
-                                    <ul class= "text-white">                            
-                                        <li>Google was created </li>
-                                     
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    </div>        
                 </div>
 
             <div class="fixed-bottom" style="background-color: rgba(0, 0, 0, 0.2);">

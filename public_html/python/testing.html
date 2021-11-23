@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Installing Pylint and OOP Term Definitions</title>
+        <title></title>
         <meta name="author" content="Jay Patel" />
         <meta name="description" content="How to install pylint and define OOP terms" />
         <script src="../js/jquery-3.3.1.slim.min.js"></script>
@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex">
                 <div class="">
-                    <a class="navbar-brand" href="">Installing Pylint and OOP Term Definitions</a>
+                    <a class="navbar-brand" href="">Testing</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -29,14 +29,14 @@
                             <li class="nav-item">
                                 <a class="nav-link btn btn-sm btn-outline-secondary" href="pylint-terms.html">Pylint</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-sm btn-outline-secondary" href="oops-oops.html">OOP</a>
-                            </li>
                             <li class="nav-item active">
                                 <a class="nav-link btn btn-outline-success" href="testing.html">Testing<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-sm btn-outline-secondary" href="placeholder.html">????</a>
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="oops-oops.html">OOP</a>
+                            </li>                           
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="placeholder.html">Seperation</a>
                             </li>
                         </ul>
                     </div>
@@ -46,9 +46,9 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <div class="card bg-dark" style="margin-top: 100px;">
-                        <img class="card-img" style="width:100%;" src="../img/search-1.jpg" alt="picture of yahoo home screen">
+                        <img class="card-img" style="width:100%;" src="../img/testing1.jpg" alt="picture of finding bugs">
                         <div class="card-body">
-                            <h5 class="card-title text-white">Old Yahoo Homescreen</h5>
+                            <h5 class="card-title text-white">Bug Finder</h5>
                         </div>
                     </div>
                 </div>
@@ -59,11 +59,22 @@
                                 <ul class= "text-white">
                                     <li>Why is Testing Important?
                                         <ul>
-                                            <li>How else would you know if your code works</li>
-                                            <li>Print statements only tell part of a story, not how functions relate</li>
+                                            <li>How else would you know if your code works?</li>
                                             <li>Proper testing can detect any bugs and defects in the code</li>
-                                            <li>Can also find security flaws</li>
+                                            <li>It can also find security flaws</li>
+                                            <li>It ensures the code does exactly what it is supposed to do before publishing</li>
+                                            <li>Lastly, it will prove there will not be any unexpected results</li>
                                         </ul>
+                                    </li>
+                                    <li>What is AAA Testing?
+                                        <ul>
+                                            <li>It stands for: Arrange, Act, Assert</li>
+                                            <li>Arrange: code required to execute a specific test</li>
+                                            <li>Act: invoke the method being tested</li>
+                                            <li>Assert: check whether the expectations were met </li>                                            
+                                        </ul>
+                                        Example: <br>                                        
+                                        <code>def test_add():<br>&emsp;#arrange <br> &emsp;val1=1 <br> &emsp;val2=2 <br> &emsp;#act<br>&emsp;q=add(val1,val2)<br>&emsp;#assert<br>&emsp;q=3</code>                                    
                                     </li>
                                 </ul>
                             </p>
@@ -83,23 +94,26 @@
                     <div class="card bg-dark" style="margin-top: 100px; margin-bottom: 75px;">
                         <div class="card-body">
                             <p class="d-inline">
-                                <ul class= "text-white">                            
-                                    <li>what is AAA Testing
+                                <ul class= "text-white">
+                                    <li>External Testing
                                         <ul>
-                                            <li>Arrange, Act, Assert
-                                                So the arrange section you only have code required to setup that specific test. 
-                                                Here objects would be created, mocks setup (if you are using one) and potentially expectations would be set.
-                                                    Then there is the Act, which should be the invocation of the method being tested. 
-                                                And on Assert you would simply check whether the expectations were met.
-                                            </li>
+                                            <li>For external testing, you need pandas installed</li>
+                                            <li>The idea is that you will need to call the file </li>
+                                            <li>You can use any sort of file or database</li>
+                                            <li>Examples are python files, JSON, CSV, text, and SQL</li>
+                                            <li>This means, how you load the files depends on your input</li>
+                                            <li>How you preprocess the data in those files also depends on your input</li>
+                                            <li>For example, if you want to use pandas and CSV files, look at the picture on the left</li>
+                                            <li>This is one way of reading a CSV file into a test and creating assert statements</li>
+                                            <li>The basics steps are:</li>
+                                            <ul>
+                                                <li>read CSV file</li>
+                                                <li>Find the result column</li>
+                                                <li>Do the test using the rest of the columns in the CSV</li>
+                                                <li>Finally, assert the multiple column values equals to the result column value</li>
+                                            </ul>   
                                         </ul>
-                                        
-                                        <code>#arrange<br>repository = arr<br>client = Client(repository)<br>#act<br>client.Save()<br>#assert<br>mock.Received.SomeMethod()</code>
-                                       
-                                        https://stackoverflow.com/questions/21930858/pytest-parameterize-row-from-csv-as-a-testcase
-                                    
-                                    </li>
-                                    
+                                    </li>                        
                                 </ul>
                             </p>
                         </div>
