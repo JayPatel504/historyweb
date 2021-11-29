@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Installing Pylint and OOP Term Definitions</title>
+        <title>Principles of OOP</title>
         <meta name="author" content="Jay Patel" />
-        <meta name="description" content="How to install pylint and define OOP terms" />
+        <meta name="description" content="How calculator programs demonstrates object oriented programming" />
         <script src="../js/jquery-3.3.1.slim.min.js"></script>
         <script src="../js/popper.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex">
                 <div class="">
-                    <a class="navbar-brand" href="">Installing Pylint and OOP Term Definitions</a>
+                    <a class="navbar-brand" href="">Principles of OOP</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -36,7 +36,10 @@
                                 <a class="nav-link btn btn-outline-success" href="oops-oops.html">OOP<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-sm btn-outline-secondary" href="placeholder.html">Seperation</a>
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="seperation.html">Seperation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="https://github.com/JayPatel504/calc2/tree/part5">GitHub Repo</a>
                             </li>
                         </ul>
                     </div>
@@ -44,28 +47,40 @@
             </nav>
 
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-4 align-self-center">
                         <div class="card bg-dark" style="margin-top: 100px;">
-                            <img class="card-img" style="width:100%;" src="../img/search-1.jpg" alt="picture of yahoo home screen">
+                            <img class="card-img" style="width:100%;" src="../img/oop1.png" alt="picture of calcuation class and get_result_of_first_calculation_added_to_history() from Calculator">
                             <div class="card-body">
-                                <h5 class="card-title text-white">Old Yahoo Homescreen</h5>
+                                <h5 class="card-title text-white">Example of Abstract Class and Polymorphism</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 align-self-center">
+                    <div class="col-4">
                         <div class="card bg-dark" style="margin-top: 100px; margin-bottom: 75px;">
                             <div class="card-body">
                                 <p class="d-inline">
                                     <ul class= "text-white">
-                                        <li>OOP Stuff
+                                        <li>Main Principles of Object Oriented Programming
                                             <ul>
-                                                <li>Abstraction - Calculation class</li>
-                                                <li>Polymorphism - get_result in each calc operation</li>
-                                                <li>Encapsulation - .create and .add_calc hidden in add_number etc</code></li>
-                                                <li>Inheritence - .create in Addition etc class from Calcuation class</li>
+                                                <li>Abstraction
+                                                    <ul>
+                                                        <li>Abstract classes are blueprints for other classes</li>
+                                                        <li>This is demonstated by the Calculation class</li>
+                                                        <li>All this class does is takes in a tuple, converts it to a list of floats, and saves it as an attribute</li>
+                                                        <li>By itself, this class does nothing because there is no implementation in any methods</li>
+                                                        <li>And this is the main criteria of an abstract class</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Polymorphism
+                                                    <ul>
+                                                        <li>This is basically using the same function but with different types of data</li>
+                                                        <li>An example of this in python is <code>len()</code>, because you can use that function on most data types such as int, list, and dict</li>
+                                                        <li>This is showcased with the <code>get_result()</code> function in the addition, subtraction, division, and multiplication classes</li>
+                                                        <li>As long as you call <code>get_result()</code>, you will always get the result no matter what is in <code>Calculator.history</code></li>
+                                                    </ul>
+                                                </li>                                              
                                             </ul>
-                                        </li>
-                                        
+                                        </li>                                        
                                     </ul>
                                 </p>
                             </div>
@@ -74,9 +89,9 @@
                     <div class="w-100"></div>
                     <div class="col-4 align-self-center">
                         <div class="card bg-dark">
-                            <img class="card-img" style="width:100%;" src="../img/search-2.png" alt="picture of google logo">
+                            <img class="card-img" style="width:100%;" src="../img/oop2.png" alt="picture of functions">
                             <div class="card-body">
-                                <h5 class="card-title text-white">Google Logo</h5>
+                                <h5 class="card-title text-white">Example of Encapsulation and Inheritence</h5>
                             </div>
                         </div>
                     </div>
@@ -85,8 +100,29 @@
                             <div class="card-body">
                                 <p class="d-inline">
                                     <ul class= "text-white">                            
-                                        <li>Google was created </li>
-                                     
+                                        <li>Main Principles of Object Oriented Programming
+                                            <ul>                                                
+                                                <li>Encapsulation
+                                                    <ul>
+                                                        <li>This is the technique of masking functions or attributes by having them only be called through other functions</li>
+                                                        <li>This is showcased in <code>add_numbers()</code>, <code>subtract_numbers()</code>, <code>multiply_numbers()</code>, and <code>divide_numbers()</code> in the Calculator class </li>
+                                                        <li>All four of those methods call <code>add_calculation()</code> in the Calculator class and <code>create()</code> in the Calculation class</li>
+                                                        <li>By calling <code>create()</code>, the above four methods also receive access to the <code>get_result()</code> method</li>
+                                                        <li>Another way of looking at this is: <br> <code>get_result()</code> is in <code>create()</code> which is in <code>add_numbers()</code> along with <code>add_calculation()</code> </li>
+                                                        <li>And these nested functions is encapsulation</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Inheritence - .create in Addition etc class from Calcuation class
+                                                    <ul>
+                                                        <li>Inheritence is the functions and attributes that get imported and utilized in other classes</li>
+                                                        <li>The addition, subtraction, division, and multiplication classes all import the calculation class</li>
+                                                        <li>This means they have access to the functions and attributes in the calculation class</li>
+                                                        <li>The <code>create()</code> is inherited because it is not defined in the four operation classes</li>
+                                                        <li>Also, <code>self.values</code> is not defined in the operation classes, which means it was inherited from the calcuation class</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>                                    
                                     </ul>
                                 </p>
                             </div>

@@ -36,7 +36,10 @@
                                 <a class="nav-link btn btn-sm btn-outline-secondary" href="oops-oops.html">OOP</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-sm btn-outline-secondary" href="placeholder.html">Seperation</a>
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="seperation.html">Seperation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="https://github.com/JayPatel504/calc2/tree/part3">GitHub Repo</a>
                             </li>
                         </ul>
                     </div>
@@ -48,10 +51,10 @@
                     <div class="card bg-dark" style="margin-top: 100px;">
                         <img class="card-img" style="width:100%;" src="../img/pylint1.png" alt="picture of pylint run">
                         <div class="card-body">
-                            <h5 class="card-title text-white">Pylint Example</h5>
+                            <h5 class="card-title text-white">Pylint Example of Breaking Snake_case Naming Style</h5>
                         </div>
                     </div>
-                </div>
+                </div>                
                 <div class="col-4 align-self-center">
                     <div class="card bg-dark" style="margin-top: 100px; margin-bottom: 75px;">
                         <div class="card-body">
@@ -63,8 +66,7 @@
                                             <li>You can check this by typing <code>python3</code></li>
                                             <li>But wherever you installed python, pip should be installed</li>
                                             <li>To call pip, you run <code>python3 -m pip</code></li>
-                                            <li>To get Pylint, you run <code>python3 -m pip install pylint</code> </li>
-                                            
+                                            <li>To get Pylint, you run <code>python3 -m pip install pylint</code></li>
                                             <li>If somehow you do not have pip, follow this link: <a href=https://pip.pypa.io/en/stable/installation>PIP Install</a></li>
                                             <li>Then simply follow the above steps!</li>
                                         </ul>
@@ -74,18 +76,22 @@
                                             <li>In your shell (command prompt or terminal), you go to the directory where your code is</li>
                                             <li>Run <code>pylint</code> file path or file name</li>
                                             <li>If you have four python scripts in a folder called <q>hero</q>, you would run <code>pylint hero/</code></li>
+                                            <li>Or if you wanted to check one of those scripts called class.py, you would run <code>pylint hero/class.py</code></li>
                                             <li>And that's it!</li>
                                             <li>Pylint will display what is wrong and where, so you will just have to follow the results</li>
                                         </ul>
                                         <ul>
-                                            <li>A use line to add to your code if you have to run pylint is this: <code># pylint: disable=too-few-public-methods</code></li>
+                                            <li>A useful line to add to your code for pylint is this: <code># pylint: disable=too-few-public-methods</code></li>
                                             <li>That line allows you to have one function in a file and not have to deal with pylint throwing an error</li>
+                                            <li>If you get weird import errors, add this line: <code># pylint: disable=import-error</code> </li>
+                                            <li>Otherwise, if you know the pylint errors are wrong, just use the Internet to find the pylint error supression lines</li>
                                         </ul>
                                     </li>
                                 </ul>
                             </p>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="w-100"></div>
                 <div class="col-4 align-self-center">

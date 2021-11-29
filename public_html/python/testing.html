@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title></title>
+        <title>Testing</title>
         <meta name="author" content="Jay Patel" />
-        <meta name="description" content="How to install pylint and define OOP terms" />
+        <meta name="description" content="AAA and external testing" />
         <script src="../js/jquery-3.3.1.slim.min.js"></script>
         <script src="../js/popper.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
@@ -23,6 +23,7 @@
                 <div class="ml-auto">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
+                            
                             <li class="nav-item">
                                 <a class="nav-link btn btn-sm btn-outline-secondary" href="../index.html">Home</a>
                             </li>
@@ -36,7 +37,10 @@
                                 <a class="nav-link btn btn-sm btn-outline-secondary" href="oops-oops.html">OOP</a>
                             </li>                           
                             <li class="nav-item">
-                                <a class="nav-link btn btn-sm btn-outline-secondary" href="placeholder.html">Seperation</a>
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="seperation.html">Seperation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-sm btn-outline-secondary" href="https://github.com/JayPatel504/calc2/tree/part6">GitHub Repo</a>
                             </li>
                         </ul>
                     </div>
@@ -63,7 +67,7 @@
                                             <li>Proper testing can detect any bugs and defects in the code</li>
                                             <li>It can also find security flaws</li>
                                             <li>It ensures the code does exactly what it is supposed to do before publishing</li>
-                                            <li>Lastly, it will prove there will not be any unexpected results</li>
+                                            <li>Lastly, it will prove that there will not be any unexpected results</li>
                                         </ul>
                                     </li>
                                     <li>What is AAA Testing?
@@ -74,7 +78,7 @@
                                             <li>Assert: check whether the expectations were met </li>                                            
                                         </ul>
                                         Example: <br>                                        
-                                        <code>def test_add():<br>&emsp;#arrange <br> &emsp;val1=1 <br> &emsp;val2=2 <br> &emsp;#act<br>&emsp;q=add(val1,val2)<br>&emsp;#assert<br>&emsp;q=3</code>                                    
+                                        <code>def test_add():<br>&emsp;&emsp;&emsp;#arrange <br> &emsp;&emsp;&emsp;val1=1 <br> &emsp;&emsp;&emsp;val2=2 <br> &emsp;&emsp;&emsp;#act<br>&emsp;&emsp;&emsp;q=add(val1,val2)<br>&emsp;&emsp;&emsp;#assert<br>&emsp;&emsp;&emsp;q=3</code>                                    
                                     </li>
                                 </ul>
                             </p>
@@ -84,9 +88,9 @@
                 <div class="w-100"></div>
                 <div class="col-4 align-self-center">
                     <div class="card bg-dark">
-                        <img class="card-img" style="width:100%;" src="../img/search-2.png" alt="picture of google logo">
+                        <img class="card-img" style="width:100%;" src="../img/testing2.png" alt="picture of google logo">
                         <div class="card-body">
-                            <h5 class="card-title text-white">Google Logo</h5>
+                            <h5 class="card-title text-white">Example of External Testing</h5>
                         </div>
                     </div>
                 </div>
@@ -105,12 +109,13 @@
                                             <li>How you preprocess the data in those files also depends on your input</li>
                                             <li>For example, if you want to use pandas and CSV files, look at the picture on the left</li>
                                             <li>This is one way of reading a CSV file into a test and creating assert statements</li>
-                                            <li>The basics steps are:</li>
+                                            <li>The proper way is to create your own file handling, but it is not needed if it is only for testing </li>
+                                            <li>The basics steps to use external data in testing are:</li>
                                             <ul>
-                                                <li>read CSV file</li>
-                                                <li>Find the result column</li>
-                                                <li>Do the test using the rest of the columns in the CSV</li>
-                                                <li>Finally, assert the multiple column values equals to the result column value</li>
+                                                <li>Read the file</li>
+                                                <li>Find the result values</li>
+                                                <li>Do the test using the rest of the values</li>
+                                                <li>Finally, assert the multiple values equals the result value</li>
                                             </ul>   
                                         </ul>
                                     </li>                        
@@ -125,7 +130,7 @@
                 <div class="d-flex justify-content-between p-3 text-white">
                     <div><a class="text-white" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fjhp54.eastus.azurecontainer.io%2Fsearch.html">W3C</a></div>
                     <div>©2021 Copyright</div>
-                    <div>Authors: <a class="text-white" href="https://github.com/JayPatel504/calc2">Jay Patel</a></div>
+                    <div>Authors: <a class="text-white" href="https://github.com/JayPatel504/historyweb">Jay Patel</a></div>
                 </div>
             </div>
         </div>
